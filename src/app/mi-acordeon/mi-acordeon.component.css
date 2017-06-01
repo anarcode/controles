@@ -1,0 +1,7 @@
+.contenedor-acordeon{
+    font-size: 1em;
+}
+
+.contenedor-acordeon * {
+    box-sizing: border-box;
+}

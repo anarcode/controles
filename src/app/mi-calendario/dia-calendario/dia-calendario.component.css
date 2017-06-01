@@ -1,0 +1,46 @@
+.dia-calendario{
+    position: relative;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.dia-activo{
+    color:#000;
+}
+
+.dia-activo:hover{
+    background-color:#ccf;
+    z-index: 2;
+    animation-name: seleccion-de-dia;
+    animation-duration: 200ms;
+    transform: scale(1.5);
+    font-size: bold;
+}
+
+@keyframes seleccion-de-dia{
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+.dia-inactivo{
+    color:#ccc;
+    border-radius: 0;
+    background-color: #eee;
+}
+
+.dia-calendario-contenido{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 40%;
+    margin: auto;
+    text-align: center;
+}

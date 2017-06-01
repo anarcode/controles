@@ -1,0 +1,38 @@
+.contenedor-capa-acordeon{
+    font-size: 1em;
+    border: 1px solid #000;
+    border-top:1px outset #ccf;
+    border-bottom:1px outset #ccf;
+    overflow: hidden;
+}
+
+.primera{
+    border-top: 1px solid #000;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.ultima{
+    border-bottom: 1px solid #000;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.titulo-capa-acordeon{
+    font-size: 1em;
+    background-color: #ccf;
+    padding:5px;
+    cursor:pointer;
+}
+
+.contenido-capa-acordeon{
+    font-size: 1em;
+}
+
+.contenido-capa-acordeon>div{
+    padding:10px;
+}
+
+capa-acordeon{
+    opacity:1;
+}

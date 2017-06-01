@@ -1,0 +1,29 @@
+<input type="text" readonly [value]="fechaSeleccionada" (click)="ComprobarVisibilidadCalendario()" />
+<div class="control-contenedor"  [style.display]="CalendarioVisible ? 'block' : 'none'"  [ngStyle]="{ 'width.px': Ancho, 'height.px': Alto }">
+  <div class="selector-meses" [@triggerSelectorMeses]="ControladorMesesVisible" [ngStyle]="{ 'width.px': Ancho }">
+    <div class="contenedor-meses" [@triggerContenedorMeses]="ControladorMesesVisible">
+      <div *ngFor="let mes of Meses; let i = index" class="selector-mes" (click)="SeleccionarMes(i)">
+        <div class="selector-mes-contenido">{{mes}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="controles-calendario">
+    <div class="boton-control-meses" (click)="DisminuirMes()"><</div>
+    <div class="algo-seleccionado mes-seleccionado" (click)="MostrarControladorDeMeses()">{{Meses[mesActual]}}</div>
+    <div class="algo-seleccionado anho-seleccionado">{{anhoActual}}</div>
+    <div class="boton-control-meses" (click)="AumentarMes()">></div>
+  </div>
+  <div class="contenedor-contenedores"
+      [ngStyle]="{ 'width.px': Ancho * 2, 'height.px': Alto - 32 }"
+      [style.flexDirection]="MostrarMesAnterior ? 'row' : 'row-reverse'"
+      [style.left]="MostrarMesAnterior ? 0 : (Ancho * -1) + 'px'">
+    <div class="contenedor-calendario" [ngStyle]="{ 'width.px': Ancho, 'height.px': Alto - 32 }">
+      <dia-calendario *ngFor="let dia of Dias" class="celda-calendario" [Valor]="dia.Numero" [Activo]="dia.Activo" (clickDia)="DiaSeleccionado($event)"></dia-calendario>
+    </div>
+    <div class="contenedor-calendario"
+      [ngStyle]="{ 'width.px': Ancho, 'height.px': Alto - 32 }">
+      <dia-calendario *ngFor="let dia of DiasSecundario" class="celda-calendario" [Valor]="dia.Numero" [Activo]="dia.Activo"></dia-calendario>
+    </div>
+  </div>
+  
+</div>

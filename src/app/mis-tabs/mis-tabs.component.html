@@ -1,0 +1,8 @@
+<div class="contenedor-control">
+  <div class="cabeceras-tabs">
+    <div *ngFor="let tab of _tabs" (click)="ClickEnCabecera(tab)" [@VisibilidadCabecera]="tab._seleccionada">{{tab.Titulo}}</div>
+  </div>
+  <div class="contenedor-tabs" [style.height.px]="Alto">
+    <ng-content></ng-content>
+  </div>
+</div>

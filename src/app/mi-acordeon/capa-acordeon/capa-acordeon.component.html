@@ -1,0 +1,6 @@
+<div class="contenedor-capa-acordeon" [ngClass]="Clase">
+  <div class="titulo-capa-acordeon" (click)="ClickEnTitulo()">{{Titulo}}</div>
+  <div class="contenido-capa-acordeon" [@triggerAltoCapa]="_seleccionada">
+    <div><ng-content></ng-content></div>
+  </div>
+</div>

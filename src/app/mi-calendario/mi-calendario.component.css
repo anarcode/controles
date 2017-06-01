@@ -1,0 +1,105 @@
+.control-contenedor{
+    border-radius:3px;
+    border:1px solid#999;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 2px 3px 8px 0px #999;
+    overflow: hidden;
+}
+
+.control-contenedor * {
+    user-select: none;
+}
+
+.selector-meses{
+    overflow: hidden;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+}
+
+.contenedor-meses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    background-color: #fff;
+    height: 100%;
+}
+
+.selector-mes{
+    width: 33%;
+    position: relative;
+    cursor: pointer;
+}
+
+.selector-mes:hover{
+    background-color: #ccf;
+}
+
+.selector-mes-contenido{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+.boton-control-meses{
+    border-radius:3px;
+    cursor:pointer;
+    padding: 0 1em;
+}
+
+.boton-control-meses:hover{
+    background-color:#ccf;
+}
+
+.algo-seleccionado{
+    cursor:pointer;
+    width:50%;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.mes-seleccionado:hover{
+    background-color: #ccf;
+}
+
+.anho-seleccionado:hover{
+    background-color: #ccf;
+}
+
+.controles-calendario{
+    display:flex;
+    justify-content:space-between;
+}
+
+.controles-calendario *{
+    line-height: 32px;
+    box-sizing: border-box;
+}
+
+.contenedor-contenedores{
+    display: flex;
+    flex-direction: row;
+    padding:0;
+    margin:0;
+    position: relative;
+}
+
+.contenedor-calendario{
+    flex-wrap: wrap;
+    display: flex;
+    position: relative;
+}
+
+.celda-calendario{
+    box-sizing: border-box;
+    width:14.28%;
+}

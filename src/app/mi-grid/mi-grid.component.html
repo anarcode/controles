@@ -1,0 +1,7 @@
+<ng-content select="mis-columnas"></ng-content>
+
+<mi-cabecera [Columnas]="_columnas" (clickEnCelda)="ClickEnCeldaCabecera($event)">
+</mi-cabecera>
+
+<mi-fila *ngFor="let fila of _datos" [Datos]="fila" [Columnas]="_columnas" (clickCelda)="ClickEnCelda($event)">
+</mi-fila>

@@ -1,0 +1,4 @@
+<div class="mi-fila">
+  <mi-celda-fila *ngFor="let columna of Columnas._results" [Columna]="columna" [Valor]="Datos[columna.Propiedad]" (clickCelda)="ClickEnCelda($event)">
+  </mi-celda-fila>
+</div>
