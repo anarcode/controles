@@ -7,6 +7,7 @@
     color: #ccf;
     border: 1px solid #ccf;
     transition: background-color 400ms, color 400ms;
+    width:100px;
 }
 
 .mi-boton:hover{

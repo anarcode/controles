@@ -8,7 +8,6 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class MiBotonComponent implements OnInit {
 
   @Input() Texto: string;
-  @Input() Ancho: number = 100;
   @Output() click: EventEmitter<MiBotonComponent> = new EventEmitter<MiBotonComponent>();
 
   constructor() { }
