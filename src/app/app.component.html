@@ -48,4 +48,7 @@ Cras pharetra aliquam arcu ac accumsan. Orci varius natoque penatibus et magnis 
 </mis-tabs>
 <mi-color-picker Ancho="300" Alto="300"></mi-color-picker>-->
 
-<mi-calendario Ancho="250" Alto="232" (FechaSeleccionada)="FechaSeleccionada($event)"></mi-calendario>
+<mi-alert Texto="Cabecera" #alert>
+    Contenido del alert
+</mi-alert>
+<mi-boton Texto="Alert" (click)="MostrarAlert()"></mi-boton>

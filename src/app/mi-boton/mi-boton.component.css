@@ -1,0 +1,15 @@
+.mi-boton{
+    box-sizing: border-box;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fff;
+    color: #ccf;
+    border: 1px solid #ccf;
+    transition: background-color 400ms, color 400ms;
+}
+
+.mi-boton:hover{
+    color:#fff;
+    background-color: #ccf;
+}

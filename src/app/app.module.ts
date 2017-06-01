@@ -19,6 +19,8 @@ import { CapaAcordeonComponent } from './mi-acordeon/capa-acordeon/capa-acordeon
 import { MisTabsComponent } from './mis-tabs/mis-tabs.component';
 import { MiTabComponent } from './mis-tabs/mi-tab/mi-tab.component';
 import { MiColorPickerComponent } from './mi-color-picker/mi-color-picker.component';
+import { MiAlertComponent } from './mi-alert/mi-alert.component';
+import { MiBotonComponent } from './mi-boton/mi-boton.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { MiColorPickerComponent } from './mi-color-picker/mi-color-picker.compon
     CapaAcordeonComponent,
     MisTabsComponent,
     MiTabComponent,
-    MiColorPickerComponent
+    MiColorPickerComponent,
+    MiAlertComponent,
+    MiBotonComponent
   ],
   imports: [
     BrowserModule,
