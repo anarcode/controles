@@ -8,7 +8,6 @@ import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 export class MiAlertComponent implements OnInit {
 
   @Input() Visible: boolean = false;
-  @Input() Texto: string;
   @ViewChild('contenedor') _contenedor: ElementRef;
   private Izquierda: number;
   private Alto: number;
