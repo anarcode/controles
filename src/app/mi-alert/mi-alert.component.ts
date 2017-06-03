@@ -11,9 +11,12 @@ export class MiAlertComponent implements OnInit {
   @ViewChild('contenedor') _contenedor: ElementRef;
   private Izquierda: number;
   private Alto: number;
+  private EsTipoSiONo: boolean;
+  private NoTieneTipo: boolean;
 
   constructor(private _element: ElementRef) { 
-    debugger;
+    this.EsTipoSiONo = _element.nativeElement.attributes['si-no'] != undefined;
+    this.NoTieneTipo = !this.EsTipoSiONo;
   }
 
   ngOnInit() {
