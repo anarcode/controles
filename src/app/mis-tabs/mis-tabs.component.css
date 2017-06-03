@@ -1,4 +1,4 @@
-.contenedor-control{
+:host{
     font-size: 1em;
     overflow: hidden;
 }

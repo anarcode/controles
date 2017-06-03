@@ -1,5 +1,12 @@
-.mi-boton{
+:host{
+    display: block;
+}
+
+:host *{
     box-sizing: border-box;
+}
+
+.mi-boton{
     border-radius: 3px;
     text-align: center;
     cursor: pointer;

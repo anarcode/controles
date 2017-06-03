@@ -23,3 +23,7 @@
     position: absolute;
     background-color: #fff;
 }
+
+.pie-alert{
+    display: flex;
+}

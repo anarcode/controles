@@ -29,4 +29,8 @@ export class AppComponent implements OnInit {
   MostrarAlert(){
     this._alert.Visible = true;
   }
+
+  CerrarAlert(){
+    this._alert.Visible = false;
+  }
 }

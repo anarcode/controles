@@ -1,0 +1,5 @@
+#clase-alert >>> .pie-alert{
+    display:flex;
+    justify-content: flex-end;
+    width:100%;
+}
