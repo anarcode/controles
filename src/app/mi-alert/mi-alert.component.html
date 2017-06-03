@@ -6,5 +6,9 @@
       <ng-content></ng-content>
     </div>
     <ng-content select="[pie-alert]"></ng-content>
+    <div *ngIf="_element.nativeElement.attributes['si-no']" pie-alert>
+      <mi-boton Texto="Si"></mi-boton>
+      <mi-boton Texto="No"></mi-boton>
+    </div>
   </div>
 </div>

@@ -12,7 +12,9 @@ export class MiAlertComponent implements OnInit {
   private Izquierda: number;
   private Alto: number;
 
-  constructor() { }
+  constructor(private _element: ElementRef) { 
+    debugger;
+  }
 
   ngOnInit() {
     this.Izquierda = window.innerWidth / 2 - this._contenedor.nativeElement.offsetWidth / 2;
