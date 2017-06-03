@@ -1,14 +1,10 @@
 <div class="contenedor-control-alert" [style.display]="Visible ? 'block' : 'none'">
   <div class="alert-capa-fondo"></div>
   <div class="contenedor-alert" #contenedor [style.left.px]="Izquierda" [style.top.px]="Alto">
-    <div class="cabecera-alert">
-      <ng-content select="[cabecera-alert]"></ng-content>
-    </div>
+    <ng-content select="[cabecera-alert]"></ng-content>
     <div class="contenido-alert">
       <ng-content></ng-content>
     </div>
-    <div class="pie-alert">
-      <ng-content select="[pie-alert]"></ng-content>
-    </div>
+    <ng-content select="[pie-alert]"></ng-content>
   </div>
 </div>

@@ -24,6 +24,6 @@
     background-color: #fff;
 }
 
-.pie-alert{
+:host >>> [pie-alert]{
     display: flex;
 }

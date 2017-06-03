@@ -1,4 +1,8 @@
-#clase-alert >>> .pie-alert{
+:host >>> * {
+    box-sizing: border-box;
+}
+
+:host >>> [pie-alert]{
     justify-content: flex-end;
     width:100%;
 }
